@@ -53,3 +53,12 @@ summary.lm(myheadw)
 ```
 
 in the model of myhead  the adjusted r squared has decreased and the residual standard error has increased.  
+
+```{r}
+myheadlen <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(myheadlen)
+summary.lm(myheadlen)
+```
+
+in the model myheadlen the adjusted r squared is 0.8434 and the residual standard is 4.235, comparing myheadlen with the rest of the models myheadlen has recorded the best prediction so far. 
